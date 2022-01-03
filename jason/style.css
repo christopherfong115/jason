@@ -1,0 +1,110 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+.frontside-card {
+    position: absolute;
+    box-shadow: 0px 2px 20px black;
+    margin: 5rem auto;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: rgb(228, 236, 184);
+    padding: calc((425px - 356px) / 2);
+}
+
+.backside-card {
+    position: absolute;
+    margin: 5rem auto;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: rgb(228, 236, 184);
+    padding: calc((415px - 356px) / 2);
+    min-height: 600px;
+    transform: rotateY(180deg);
+    max-width: 425px;
+}
+
+body {
+    background-color: rgba(32, 29, 29, 0.589);
+}
+
+h1 {
+    font-family: arial;
+    color: orange;
+}
+
+.date {
+    font-size: 3rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    transform: translateY(5px);
+    color: black;
+}
+
+.flip-card {
+    background-color: transparent;
+    perspective: 1000px;
+    max-width: 425px;
+    margin: 0 auto;
+}
+
+.flip-card-container {
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    max-width: 425px;
+    max-height: 625px;
+  }
+
+.flip-card:hover .flip-card-container {
+    transform: rotateY(180deg);
+}
+
+.frontside-card .backside-card {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.text {
+    font-size: 2rem;
+}
+
+.button-detail {
+    position: relative;
+    width: fit-content;
+    height: 50px;
+    padding: 1rem;
+    background: green;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 9px #999;
+    cursor: pointer;
+}
+
+.button-detail:hover {background-color: #3e8e41}
+
+.button-detail:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.big-f {
+    font-size: 50rem;
+    color: orange;
+    position: absolute;
+}
+
+.right {
+    right: 0;
+    margin-right: 5rem;
+}
+
+.left {
+    margin-left: 5rem;
+}
