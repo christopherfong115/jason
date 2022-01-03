@@ -6,8 +6,3 @@ button.addEventListener ('click', () => {
         bf.style.opacity = 1;
     })
 })
-
-function respects() {
-    document.getElementById('l-f').innerHTML = "F";
-    document.getElementById('r-f').innerHTML = "F";
-}

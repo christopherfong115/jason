@@ -95,6 +95,8 @@ h1 {
 }
 
 .big-f {
+    opacity: 0;
+    transition: all 250ms ease;
     font-size: 50rem;
     color: orange;
     position: absolute;
